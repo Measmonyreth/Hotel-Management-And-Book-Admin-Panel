@@ -9,7 +9,14 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+# Claude Code local settings
+.claude/settings.local.json
 
+# Next.js build output
+.next/
+
+# VS Code (see note below)
+.vscode/
 # testing
 /coverage
 
@@ -31,7 +38,9 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+.env
+.env.local
+.env.development
 
 # vercel
 .vercel
